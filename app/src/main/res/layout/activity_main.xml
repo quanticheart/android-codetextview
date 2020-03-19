@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <com.quanticheart.toolbox.CodeEditText
+        android:id="@+id/defaultCode"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/code1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="1" />
+
+    <com.quanticheart.toolbox.CodeEditText
+        android:id="@+id/code1"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        app:code_box_style="square"
+        app:layout_constraintBottom_toTopOf="@+id/code2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defaultCode"
+        tools:text="12" />
+
+    <com.quanticheart.toolbox.CodeEditText
+        android:id="@+id/code2"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        app:code_box_style="underline"
+        app:layout_constraintBottom_toTopOf="@+id/code3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code1"
+        tools:text="123" />
+
+    <com.quanticheart.toolbox.CodeEditText
+        android:id="@+id/code3"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        app:code_box_style="rounded_underline"
+        app:layout_constraintBottom_toTopOf="@+id/code4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code2"
+        tools:text="1234" />
+
+    <com.quanticheart.toolbox.CodeEditText
+        android:id="@+id/code4"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:text="12345"
+        app:code_box_style="underline"
+        app:code_length="7"
+        app:code_mask_character="@"
+        app:code_primary_color="@android:color/holo_red_dark"
+        app:code_secondary_color="@android:color/holo_blue_light"
+        app:code_text_color="@android:color/holo_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code3" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Caracteres"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

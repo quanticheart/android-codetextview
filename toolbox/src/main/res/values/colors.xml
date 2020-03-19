@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_orange">#FFFF7300</color>
+    <color name="default_text_color">#FF555555</color>
+    <color name="light_gray">#eeeeee</color>
+    <color name="underline_gray">#ECD0D0</color>
+</resources>

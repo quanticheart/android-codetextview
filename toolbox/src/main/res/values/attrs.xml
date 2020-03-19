@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CodeEditText">
+        <attr name="code_length" format="integer|reference" />
+
+        <attr name="code_primary_color" format="color|reference" />
+        <attr name="code_secondary_color" format="color|reference" />
+        <attr name="code_text_color" format="color|reference" />
+
+        <attr name="code_box_style" format="enum">
+            <enum name="rounded_square" value="0" />
+            <enum name="square" value="1" />
+            <enum name="rounded_underline" value="2" />
+            <enum name="underline" value="3" />
+        </attr>
+
+        <attr name="code_mask_character" format="string|reference" />
+
+    </declare-styleable>
+</resources>
